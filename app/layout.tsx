@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 import "@/app/_styles/globals.css";
 
+import Header from "@/app/_components/Header";
 import Footer from "@/app/footer";
 
 export const metadata = {
@@ -16,8 +17,14 @@ type RootLayoutProps = { children: ReactNode };
 function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className="min-h-screen">
-        <main>{children}</main>
+      <body className="min-h-screen flex flex-col bg-[#353535]">
+        {/* Navigation Bar */}
+        <Header />
+        {/* Pages Content */}
+        <main className="flex-1 flex items-center justify-center">
+          {children}
+        </main>
+        {/* Footer */}
         <Footer />
       </body>
     </html>
