@@ -1,5 +1,9 @@
 import StackIcon from "tech-stack-icons";
 
+export const metadata = {
+  title: "Skills",
+};
+
 function Page() {
   return (
     <div className="text-[#d9d9d9]">

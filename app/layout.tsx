@@ -17,7 +17,7 @@ type RootLayoutProps = { children: ReactNode };
 function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-[#353535]">
+      <body className="min-h-screen flex flex-col bg-[#1a1a1a]">
         {/* Navigation Bar */}
         <Header />
         {/* Pages Content */}
