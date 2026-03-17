@@ -17,13 +17,18 @@ type RootLayoutProps = { children: ReactNode };
 function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-[#1a1a1a]">
+      <head>
+        {/* Devicon CSS */}
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+      </head>
+      <body className="bg-[#1a1a1a] w-full">
         {/* Navigation Bar */}
         <Header />
-        {/* Pages Content */}
-        <main className="flex-1 flex items-center justify-center">
-          {children}
-        </main>
+        {/* Contents */}
+        <main>{children}</main>
         {/* Footer */}
         <Footer />
       </body>
