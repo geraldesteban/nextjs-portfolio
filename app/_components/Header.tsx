@@ -2,28 +2,42 @@
 
 import Link from "next/link";
 
-import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { headerNavigations } from "@/app/data/headerNavigations";
 
 function Header() {
+  const handleScroll = (e: React.MouseEvent<HTMLElement>, id: string) => {
+    e.preventDefault();
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+
+      window.history.replaceState(null, "", " ");
+    }
+  };
+
   return (
-    <header className="flex justify-between py-5 px-56 text-white bg-[#1a1a1a] border-b-[0.1px]">
-      <h2 className="text-xl font-bold text-[#d9d9d9]">Gerald Esteban</h2>
-      <nav>
-        <ul className="flex items-center gap-10 text-[#d9d9d9]">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/skills">Skills</Link>
-          </li>
-          <li>
-            <Link href="/projects">Projects</Link>
-          </li>
-          <li>
-            <DarkModeIcon />
-          </li>
-        </ul>
-      </nav>
+    <header className="text-[#D9D9D9] fixed w-full py-5 border-b border-[#808080] bg-[#1a1a1a] z-50">
+      <div className="w-190 mx-auto flex justify-between items-center max-lg:px-5 max-lg:w-full">
+        <Link href="/" className="text-xl font-bold">
+          Gerald Esteban
+        </Link>
+        <nav>
+          <ul className="flex items-center gap-2 max-sm:gap-0">
+            {headerNavigations.map((item) => (
+              <li key={item.id} className="font-bold text-sm">
+                <Link
+                  href={`#${item.id}`}
+                  className="hover:bg-[#424242] p-1 px-3 rounded-full max-md:px-1"
+                  onClick={(e) => handleScroll(e, item.id)}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }
