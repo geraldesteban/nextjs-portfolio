@@ -25,12 +25,7 @@ function RootLayout({ children }: RootLayoutProps) {
         />
       </head>
       <body className="bg-[#1a1a1a] w-full">
-        {/* Navigation Bar */}
-        <Header />
-        {/* Contents */}
         <main>{children}</main>
-        {/* Footer */}
-        <Footer />
       </body>
     </html>
   );
