@@ -1,0 +1,99 @@
+"use client";
+
+import { useState } from "react";
+
+import { otherProjects } from "@/app/data/otherProjects";
+
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+
+function OtherProjects() {
+  const projectsPerPage = 5;
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const totalPages = Math.ceil(otherProjects.length / projectsPerPage);
+
+  const nextPage = () => {
+    if (currentPage < totalPages - 1)
+      setCurrentPage((next) => (next + 1) % totalPages);
+  };
+  const prevPage = () => {
+    if (currentPage > 0) setCurrentPage((prev) => (prev - 1) % totalPages);
+  };
+
+  const start = currentPage * projectsPerPage;
+  const currentProjects = otherProjects.slice(start, start + projectsPerPage);
+
+  return (
+    <div className="text-[#d9d9d9] flex flex-col gap-5 w-190 mx-auto pb-5  max-lg:px-5 max-lg:w-full">
+      <h2 className="text-3xl font-bold">Other Projects</h2>
+      <div className="grid grid-cols-1 place-items-center gap-10">
+        {currentProjects.map((project, i) => (
+          <div
+            key={i}
+            className="group w-full bg-[#141414] border-[#808080] hover:border-[#d9d9d9] border rounded-md cursor-pointer hover:bg-transparent"
+          >
+            <div className="flex flex-col gap-2.5 p-2.5">
+              <h2 className="text-xl font-bold">{project.title}</h2>
+              <div className="flex justify-end gap-5">
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  className="group/repo flex flex-col gap-2"
+                >
+                  <div className="flex items-center gap-1">
+                    <span>Repo</span>
+                    <div className="opacity-0 group-hover/repo:opacity-100">
+                      <ArrowOutwardIcon sx={{ fontSize: 15 }} />
+                    </div>
+                  </div>
+                  <div className="border-[#808080] border-b"></div>
+                </a>
+                <span className="text-[#808080]">/</span>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  className="group/demo flex flex-col gap-2"
+                >
+                  <div className="flex items-center gap-1">
+                    <span>Demo</span>
+                    <div className="opacity-0 group-hover/demo:opacity-100">
+                      <ArrowOutwardIcon sx={{ fontSize: 15 }} />
+                    </div>
+                  </div>
+                  <div className="border-[#808080] border-b"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-center items-center gap-10 flex-wrap max-lg:px5 max-lg:w-full">
+        <button
+          className={`${currentPage + 1 === 1 ? "cursor-not-allowed" : "cursor-pointer"}`}
+          onClick={prevPage}
+        >
+          <ArrowBackIosIcon />
+        </button>
+        {Array.from({ length: totalPages }).map((_, i) => (
+          <button
+            key={i}
+            className={`${currentPage + 1 === i + 1 ? "text-[#D9D9D9] font-bold" : "text-[#808080]"} text-base cursor-pointer`}
+            onClick={() => setCurrentPage(i)}
+          >
+            {i + 1}
+          </button>
+        ))}
+        <button
+          className={`${currentPage >= totalPages - 1 ? "cursor-not-allowed" : "cursor-pointer"}`}
+          onClick={nextPage}
+        >
+          <ArrowForwardIosIcon />
+        </button>
+      </div>
+      <div className="border-white border-b-10"></div>
+    </div>
+  );
+}
+export default OtherProjects;
