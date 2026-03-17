@@ -5,7 +5,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 
 function SocialLinks() {
   return (
-    <div className=" text-[#D9D9D9] text-sm flex flex-wrap gap-5 max-lg:w-full max-lg:gap-2">
+    <div className=" text-[#D9D9D9] text-sm flex flex-wrap gap-5 max-lg:w-full max-sm:grid max-sm:grid-cols-2">
       <a
         href="https://github.com/geraldesteban"
         className="flex gap-1 items-center p-1 border rounded-sm border-[#808080] bg-[#141414] hover:bg-transparent hover:border-[#D9D9D9]"
