@@ -2,9 +2,6 @@ import { ReactNode } from "react";
 
 import "@/app/_styles/globals.css";
 
-import Header from "@/app/_components/Header";
-import Footer from "@/app/footer";
-
 export const metadata = {
   title: {
     template: "%s",
