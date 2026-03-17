@@ -1,6 +1,5 @@
-export interface OtherProjects {
+export interface OtherProjectsTypes {
   title: string;
-  description: string;
   repo: string;
   link: string;
 }
