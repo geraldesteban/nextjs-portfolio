@@ -1,7 +1,12 @@
+import SocialLinks from "@/app/_components/SocialLinks";
+
 function Footer() {
   return (
-    <footer className="text-center text-gray-500 border-t-[0.1px] py-5">
-      © 2026 Gerald Esteban
+    <footer className="flex flex-col gap-2.5 text-center text-sm text-gray-500 border-t border-[#808080] py-5">
+      <div className="flex justify-center max-lg:px-5">
+        <SocialLinks />
+      </div>
+      <span>© 2026 Gerald Esteban</span>
     </footer>
   );
 }
