@@ -18,12 +18,16 @@ function Header() {
 
   return (
     <header className="text-[#D9D9D9] fixed w-full py-5 border-b border-[#808080] bg-[#1a1a1a] z-50">
-      <div className="w-190 mx-auto flex justify-between items-center max-lg:px-5 max-lg:w-full">
-        <Link href="/" className="text-xl font-bold">
+      <div className="w-190 mx-auto flex justify-between items-center max-md:flex-col max-md:gap-5 max-lg:px-5 max-lg:w-full">
+        <Link
+          href="#about"
+          className="text-xl font-bold"
+          onClick={(e) => handleScroll(e, "about")}
+        >
           Gerald Esteban
         </Link>
         <nav>
-          <ul className="flex items-center gap-2 max-sm:gap-0">
+          <ul className="flex items-center gap-2">
             {headerNavigations.map((item) => (
               <li key={item.id} className="font-bold text-sm">
                 <Link
