@@ -4,6 +4,8 @@ export interface FeaturedProjectsTypes {
   image: StaticImageData;
   title: string;
   description: string;
+  details: string;
   repo: string;
   link: string;
+  status: string;
 }
