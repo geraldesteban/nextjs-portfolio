@@ -1,0 +1,7 @@
+import { HeaderNavigationsTypes } from "@/app/types/headerNavigationsTypes";
+
+export const headerNavigations: HeaderNavigationsTypes[] = [
+  { label: "About", id: "about" },
+  { label: "Tech Stack", id: "techStack" },
+  { label: "Projects", id: "projects" },
+];
