@@ -69,7 +69,7 @@ function OtherProjects() {
           </div>
         ))}
       </div>
-      <div className="flex justify-center items-center gap-10 flex-wrap max-lg:px5 max-lg:w-full">
+      <div className="flex justify-center items-center gap-10 flex-wrap max-lg:px5 max-lg:w-full max-sm:gap-5">
         <button
           className={`${currentPage + 1 === 1 ? "cursor-not-allowed" : "cursor-pointer"}`}
           onClick={prevPage}
