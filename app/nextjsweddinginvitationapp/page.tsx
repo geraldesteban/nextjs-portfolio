@@ -10,7 +10,7 @@ import PFA3 from "@/app/_assets/NextJSWeddingInvitationApp/3.png";
 
 function Page() {
   return (
-    <div className="text-[#D9D9D9] w-190 mx-auto py-10">
+    <div className="text-[#D9D9D9] w-190 mx-auto py-10 max-lg:px-5 max-lg:w-full">
       <div className="flex flex-col gap-10">
         {/* Go back */}
         <Link href="/" className="flex items-center gap-1">
@@ -27,7 +27,7 @@ function Page() {
           <div className="border-[#808080] border-b"></div>
         </div>
         {/* Repo and Demo */}
-        <div className="flex gap-5">
+        <div className="flex gap-5 max-md:text-sm">
           <a
             href="https://github.com/geraldesteban/wedding-invitation-one"
             target="_blank"
@@ -72,7 +72,7 @@ function Page() {
         {/* Tech Stack Used */}
         <div className="flex flex-col gap-2.5">
           <h2 className="text-xl font-bold">Technologies</h2>
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2.5 flex-wrap">
             <span className="border rounded-full px-2 py-1">Vite</span>
             <span className="border rounded-full px-2 py-1">JavaScript</span>
             <span className="border rounded-full px-2 py-1">Tailwind</span>
@@ -82,7 +82,7 @@ function Page() {
           <div className="border-[#808080] border-b"></div>
         </div>
         {/* Repo and Demo */}
-        <div className="flex gap-5">
+        <div className="flex gap-5 max-md:text-sm">
           <a
             href="https://github.com/geraldesteban/wedding-invitation-one"
             target="_blank"

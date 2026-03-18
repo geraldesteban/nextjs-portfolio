@@ -9,7 +9,7 @@ function FeaturedProjects() {
   return (
     <div
       id="projects"
-      className="text-[#d9d9d9] flex flex-col gap-5 w-190 mx-auto scroll-mt-20 pb-5 max-lg:px-5 max-lg:w-full max-md:scroll-mt-28"
+      className="text-[#d9d9d9] flex flex-col gap-5 w-190 mx-auto scroll-mt-20 pb-5 max-lg:px-5 max-lg:w-full max-md:scroll-mt-32"
     >
       <h2 className="text-3xl font-bold">Featured Projects</h2>
       {/* Featured Projects */}

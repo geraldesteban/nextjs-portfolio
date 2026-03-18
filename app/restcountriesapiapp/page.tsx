@@ -70,7 +70,7 @@ function Page() {
         {/* Tech Stack Used */}
         <div className="flex flex-col gap-2.5">
           <h2 className="text-xl font-bold">Technologies</h2>
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2.5 flex-wrap">
             <span className="border rounded-full px-2 py-1">JavaScript</span>
             <span className="border rounded-full px-2 py-1">Tailwind</span>
             <span className="border rounded-full px-2 py-1">REST API</span>

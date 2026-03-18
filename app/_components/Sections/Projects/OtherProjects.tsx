@@ -34,9 +34,9 @@ function OtherProjects() {
             key={i}
             className="group w-full bg-[#141414] border-[#808080] hover:border-[#d9d9d9] border rounded-md cursor-pointer hover:bg-transparent"
           >
-            <div className="flex flex-col gap-2.5 p-2.5">
+            <div className="flex flex-col gap-2.5 p-2.5 max-sm:text-sm">
               <h2 className="text-xl font-bold">{project.title}</h2>
-              <div className="flex justify-end gap-5">
+              <div className="flex justify-end gap-5 max-sm:gap-2">
                 <a
                   href={project.repo}
                   target="_blank"

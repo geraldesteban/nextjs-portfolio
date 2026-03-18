@@ -4,7 +4,7 @@ function About() {
   return (
     <div
       id="about"
-      className="flex flex-col w-190 mx-auto gap-5 pt-28 pb-5 max-lg:px-5 max-lg:w-full"
+      className="flex flex-col w-190 mx-auto gap-5 pt-28 pb-5 max-lg:px-5 max-lg:w-full max-md:pt-36"
     >
       <div className="flex flex-col gap-5">
         <h2 className="font-bold text-5xl">Hi, I&apos;m Gerald Esteban</h2>

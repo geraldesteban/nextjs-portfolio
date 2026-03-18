@@ -6,7 +6,7 @@ function TechStack() {
   return (
     <div
       id="techStack"
-      className="text-[#D9D9D9] flex flex-col gap-5 w-190 mx-auto scroll-mt-20 pb-5  max-lg:px-5 max-lg:w-full max-md:scroll-mt-28"
+      className="text-[#D9D9D9] flex flex-col gap-5 w-190 mx-auto scroll-mt-20 pb-5 max-lg:px-5 max-lg:w-full max-md:scroll-mt-32"
     >
       <h2 className="text-3xl font-bold">Tech Stack</h2>
       <div className="grid grid-cols-3 gap-5 max-md:grid-cols-2 max-sm:grid-cols-1">
