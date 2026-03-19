@@ -9,8 +9,9 @@ function About() {
       <div className="flex flex-col gap-5">
         <h2 className="font-bold text-5xl">Hi, I&apos;m Gerald Esteban</h2>
         <p className="font-bold">
-          A Web Developer who is experienced in building web applications with
-          JavaScript, TypeScript, React, Next.js, Node.js and Supabase.
+          An entry-level web developer who is experienced in building web
+          application projects in Frontend Mentor with JavaScript, Tailwind,
+          React, Next.js, and Supabase.
         </p>
         <div className="border-[#808080] border-b"></div>
       </div>
@@ -23,9 +24,9 @@ function About() {
           projects.
         </p>
         <p>
-          As a web developer, I focus on modern tech tools such as TypeScript,
-          JavaScript, React, Next.js, and modern development workflows to build
-          efficient and responsive web applications.
+          As a web developer, I focus on modern tech tools such as JavaScript,
+          React, Next.js, and modern development workflows to build efficient
+          and responsive web applications.
         </p>
         <div className="border-[#808080] border-b"></div>
       </div>
