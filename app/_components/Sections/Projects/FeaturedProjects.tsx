@@ -93,7 +93,7 @@ function FeaturedProjects() {
           </div>
         ))}
       </div>
-      <div className="border-white border-b-10"></div>
+      <div className="border-[#808080] border-b"></div>
     </div>
   );
 }

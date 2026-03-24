@@ -31,18 +31,16 @@ export const featuredProjects: FeaturedProjectsTypes[] = [
   {
     image: ReactTWO,
     title: "React The Wild Oasis App",
-    description:
-      "A Full Stack Wild Oasis app (Admin POV) built with React from a Udemy tutorial.",
+    description: "A Full Stack Wild Oasis app (Admin POV) built with React.",
     details: "reactthewildoasisapp",
-    repo: "https://github.com/geraldesteban/nextjs-the-wild-oasis",
+    repo: "https://github.com/geraldesteban/react-the-wild-oasis",
     link: "https://gce-react-the-wild-oasis.vercel.app/",
     status: "Finished",
   },
   {
     image: NextJSTWO,
     title: "Next.js The Wild Oasis App",
-    description:
-      "A Full Stack Wild Oasis app (User POV) built with Next.js from a Udemy tutorial.",
+    description: "A Full Stack Wild Oasis app (User POV) built with Next.js.",
     details: "nextjsthewildoasisapp",
     repo: "https://github.com/geraldesteban/nextjs-the-wild-oasis",
     link: "https://gce-nextjs-the-wild-oasis.vercel.app/",
@@ -62,7 +60,7 @@ export const featuredProjects: FeaturedProjectsTypes[] = [
     image: RestCountriesAPI,
     title: "REST Countries API App",
     description:
-      "A REST Countries API where users can view short details of the countries.",
+      "A REST Countries API app, a challenge from Frontend Mentor at Advanced difficulty.",
     details: "restcountriesapiapp",
     repo: "https://github.com/geraldesteban/project-rest-countries-api",
     link: "https://rest-countries-api-gce.vercel.app/",

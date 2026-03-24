@@ -32,7 +32,7 @@ function Page() {
         {/* Repo and Demo */}
         <div className="flex gap-5 max-md:text-sm">
           <a
-            href="https://github.com/geraldesteban/react-personal-finance-app"
+            href="https://github.com/geraldesteban/react-the-wild-oasis"
             target="_blank"
             className="group/repo flex flex-col gap-2"
           >
@@ -46,7 +46,7 @@ function Page() {
           </a>
           <span className="text-[#808080]">/</span>
           <a
-            href="https://gce-react-personal-finance.vercel.app/login"
+            href="https://gce-react-the-wild-oasis.vercel.app/"
             target="_blank"
             className="group/demo flex flex-col gap-2"
           >
@@ -71,25 +71,31 @@ function Page() {
         {/* Highlights */}
         <div className="flex flex-col gap-2.5">
           <h2 className="text-xl font-bold">Highlights</h2>
-          <p>- Users can log in and sign up.</p>
           <p>
-            - Access dashboard with bookings, sales, activity, and sales graphs
-            by date.
+            - Built an admin dashboard with Home, Bookings, Cabins, Users, and
+            Settings sections to manage the reservation system.
+          </p>
+          <p>
+            - Implemented Bookings management for handling reservations,
+            updates, and monitoring transactions.
           </p>
 
           <p>
-            - View, sort, and manage all bookings, check-ins, and check-outs.
+            - Created a Cabins module for adding, editing, and deleting cabin
+            listings with validation.
           </p>
           <p>
-            - Manage cabins: view, add, sort, and filter by discount
-            availability.
+            - Developed Users functionality for creating new users and managing
+            accounts.
           </p>
-          <p>- Create and manage users.</p>
           <p>
-            - Update hotel settings, including maximum/minimum nights and guest
-            limits.
+            - Implemented a database to store users, cabins, and bookings,
+            ensuring secure and structured data management.
           </p>
-          <p>- Update account information.</p>
+          <p>
+            - Configured Settings to manage hotel rules and limits, including
+            maximum and minimum booking requirements.
+          </p>
           <div className="border-[#808080] border-b"></div>
         </div>
         {/* Tech Stack Used */}
@@ -102,15 +108,15 @@ function Page() {
             <span className="border rounded-full px-2 py-1">React</span>
             <span className="border rounded-full px-2 py-1">React Router</span>
             <span className="border rounded-full px-2 py-1">React Query</span>
-            <span className="border rounded-full px-2 py-1">Node.js</span>
             <span className="border rounded-full px-2 py-1">Supabase</span>
+            <span className="border rounded-full px-2 py-1">Vercel</span>
           </div>
           <div className="border-[#808080] border-b"></div>
         </div>
         {/* Repo and Demo */}
         <div className="flex gap-5 max-md:text-sm">
           <a
-            href="https://github.com/geraldesteban/react-personal-finance-app"
+            href="https://github.com/geraldesteban/react-the-wild-oasis"
             target="_blank"
             className="group/repo flex flex-col gap-2"
           >
@@ -124,7 +130,7 @@ function Page() {
           </a>
           <span className="text-[#808080]">/</span>
           <a
-            href="https://gce-react-personal-finance.vercel.app/login"
+            href="https://gce-react-the-wild-oasis.vercel.app/"
             target="_blank"
             className="group/demo flex flex-col gap-2"
           >

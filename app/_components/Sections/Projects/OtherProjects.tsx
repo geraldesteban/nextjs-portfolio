@@ -71,7 +71,7 @@ function OtherProjects() {
       </div>
       <div className="flex justify-center items-center gap-10 flex-wrap max-lg:px5 max-lg:w-full max-sm:gap-5">
         <button
-          className={`${currentPage + 1 === 1 ? "cursor-not-allowed" : "cursor-pointer"}`}
+          className={`${currentPage + 1 === 1 ? "cursor-not-allowed" : "cursor-pointer"} text-[#808080] hover:text-[#D9D9D9]`}
           onClick={prevPage}
         >
           <ArrowBackIosIcon />
@@ -86,13 +86,13 @@ function OtherProjects() {
           </button>
         ))}
         <button
-          className={`${currentPage >= totalPages - 1 ? "cursor-not-allowed" : "cursor-pointer"}`}
+          className={`${currentPage >= totalPages - 1 ? "cursor-not-allowed" : "cursor-pointer"} text-[#808080] hover:text-[#D9D9D9]`}
           onClick={nextPage}
         >
           <ArrowForwardIosIcon />
         </button>
       </div>
-      <div className="border-white border-b-10"></div>
+      <div className="border-[#808080] border-b"></div>
     </div>
   );
 }

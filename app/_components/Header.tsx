@@ -32,7 +32,7 @@ function Header() {
               <li key={item.id} className="font-bold text-sm">
                 <Link
                   href={`#${item.id}`}
-                  className="hover:bg-[#424242] p-1 px-3 rounded-full max-md:px-1"
+                  className="hover:bg-[#424242] p-1 px-3 rounded-full max-md:px-1 transition-all duration-300 ease-in-out"
                   onClick={(e) => handleScroll(e, item.id)}
                 >
                   {item.label}

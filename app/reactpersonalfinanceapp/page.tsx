@@ -71,24 +71,25 @@ function Page() {
         {/* Highlights */}
         <div className="flex flex-col gap-2.5">
           <h2 className="text-xl font-bold">Highlights</h2>
-          <p>- Users can log in and sign up.</p>
           <p>
-            - The app has five pages: Overview, Transactions, Budgets, Pots, and
-            Recurring Bills.
+            - Built from scratch based on the design and requirements from a
+            Frontend Mentor challenge, implementing a full stack personal
+            finance app with overview, transactions, budgets, pots, and
+            recurring bills.
+          </p>
+          <p>
+            - Added search, sort, filter, and pagination for transactions and
+            bills.
           </p>
 
           <p>
-            - Overview shows a summary of balance, income, expenses, pots,
-            transactions, budgets, and recurring bills.
+            - Implemented CRUD features, validation, and progress tracking for
+            savings pots.
           </p>
+          <p>- Ensured responsive design.</p>
           <p>
-            - Transactions can be searched, filtered, and sorted by category.
-            Budgets show spending summaries, and users can add or edit budgets.
-          </p>
-          <p>- Pots can be created, and users can add or withdraw money.</p>
-          <p>
-            - Recurring Bills show total bills, and users can search or sort
-            them.
+            - Integrated database and user authentication for a full-stack
+            setup.
           </p>
           <div className="border-[#808080] border-b"></div>
         </div>
@@ -102,8 +103,8 @@ function Page() {
             <span className="border rounded-full px-2 py-1">React</span>
             <span className="border rounded-full px-2 py-1">React Router</span>
             <span className="border rounded-full px-2 py-1">React Query</span>
-            <span className="border rounded-full px-2 py-1">Node.js</span>
             <span className="border rounded-full px-2 py-1">Supabase</span>
+            <span className="border rounded-full px-2 py-1">Vercel</span>
           </div>
           <div className="border-[#808080] border-b"></div>
         </div>

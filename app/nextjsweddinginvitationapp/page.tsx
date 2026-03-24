@@ -65,8 +65,22 @@ function Page() {
         {/* Highlights */}
         <div className="flex flex-col gap-2.5">
           <h2 className="text-xl font-bold">Highlights</h2>
-          <p>- View wedding details.</p>
-          <p>- Submit RSVP.</p>
+          <p>
+            - Built from scratch, implementing sections for Home, Love Story,
+            Entourage, Timeline, Attire, Details, FAQs, Location, and RSVP.
+          </p>
+          <p>
+            - Added a QR code for scanning the location and a real-time
+            countdown to the wedding.
+          </p>
+          <p>
+            - Included a floating button for background music and a separate
+            RSVP button.
+          </p>
+          <p>
+            Integrated a database for RSVP, accepting guest first name and last
+            name.
+          </p>
           <div className="border-[#808080] border-b"></div>
         </div>
         {/* Tech Stack Used */}
@@ -78,6 +92,7 @@ function Page() {
             <span className="border rounded-full px-2 py-1">Tailwind</span>
             <span className="border rounded-full px-2 py-1">Next.js</span>
             <span className="border rounded-full px-2 py-1">Supabase</span>
+            <span className="border rounded-full px-2 py-1">Vercel</span>
           </div>
           <div className="border-[#808080] border-b"></div>
         </div>

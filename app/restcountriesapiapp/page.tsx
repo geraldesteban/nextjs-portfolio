@@ -20,8 +20,8 @@ function Page() {
         <div className="flex flex-col gap-2.5">
           <h2 className="text-xl font-bold">REST Countries API App</h2>
           <p>
-            A REST Countries API where users can view short details of the
-            countries.
+            A REST Countries API app, a challenge from Frontend Mentor at
+            Advanced difficulty.
           </p>
           <div className="border-[#808080] border-b"></div>
         </div>
@@ -63,8 +63,11 @@ function Page() {
         {/* Highlights */}
         <div className="flex flex-col gap-2.5">
           <h2 className="text-xl font-bold">Highlights</h2>
-          <p>- Display countries by continent or show all countries.</p>
-          <p>- Search for a specific country.</p>
+          <p>
+            - Built from scratch, implementing continent navigation for viewing
+            short details of countries.
+          </p>
+          <p>- Added a search bar for finding specific countries.</p>
           <div className="border-[#808080] border-b"></div>
         </div>
         {/* Tech Stack Used */}
@@ -74,6 +77,7 @@ function Page() {
             <span className="border rounded-full px-2 py-1">JavaScript</span>
             <span className="border rounded-full px-2 py-1">Tailwind</span>
             <span className="border rounded-full px-2 py-1">REST API</span>
+            <span className="border rounded-full px-2 py-1">NETLIFY</span>
           </div>
           <div className="border-[#808080] border-b"></div>
         </div>

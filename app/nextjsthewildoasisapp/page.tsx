@@ -22,10 +22,7 @@ function Page() {
         {/* Title and Description */}
         <div className="flex flex-col gap-2.5">
           <h2 className="text-xl font-bold">Next.js The Wild Oasis App</h2>
-          <p>
-            A Full Stack Wild Oasis app (User POV) built with Next.js from a
-            Udemy tutorial.
-          </p>
+          <p>A Full Stack Wild Oasis app (User POV) built with Next.js.</p>
           <div className="border-[#808080] border-b"></div>
         </div>
         {/* Repo and Demo */}
@@ -65,20 +62,32 @@ function Page() {
           <Image src={PFA3} alt="Transactions" quality={100} />
           <Image src={PFA4} alt="Budgets" quality={100} />
           <Image src={PFA5} alt="Pots" quality={100} />
+          <div className="border-[#808080] border-b"></div>
         </div>
         {/* Highlights */}
         <div className="flex flex-col gap-2.5">
           <h2 className="text-xl font-bold">Highlights</h2>
-          <p>- Users can log in and sign up using Google Account.</p>
-          <p>- Browse and filter cabins by number of guests.</p>
-
-          <p>- View detailed information for each cabin.</p>
           <p>
-            - Reserve cabins with automatic calculation of total cost based on
-            dates and guests.
+            - Built from a ready-made UI (desktop view), creating a full-stack
+            reservation system for luxury cabins with details, about, and guest
+            areas.
           </p>
-          <p>- Track and manage all reservations.</p>
-          <p>- Update personal profile.</p>
+          <p>
+            - Added a mobile version for better accessibility, responsiveness,
+            and interactive UI.
+          </p>
+
+          <p>
+            - Integrated a database to store cabin data and implemented CRUD
+            features with validation.
+          </p>
+          <p>
+            - Added user authentication with Google Sign-Up for easy access.
+          </p>
+          <p>
+            - Included a guest area for viewing reservations and updating the
+            guest profile.
+          </p>
           <div className="border-[#808080] border-b"></div>
         </div>
         {/* Tech Stack Used */}
@@ -90,8 +99,8 @@ function Page() {
             <span className="border rounded-full px-2 py-1">Tailwind</span>
             <span className="border rounded-full px-2 py-1">Next.js</span>
             <span className="border rounded-full px-2 py-1">NextAuth.js</span>
-            <span className="border rounded-full px-2 py-1">Node.js</span>
             <span className="border rounded-full px-2 py-1">Supabase</span>
+            <span className="border rounded-full px-2 py-1">Vercel</span>
           </div>
           <div className="border-[#808080] border-b"></div>
         </div>
