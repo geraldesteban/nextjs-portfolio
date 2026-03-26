@@ -6,7 +6,7 @@ function Footer() {
       <div className="flex justify-center max-lg:px-5">
         <SocialLinks />
       </div>
-      <span>© 2026 Gerald Esteban</span>
+      <span className="font-semibold">© 2026 Gerald Esteban</span>
     </footer>
   );
 }

@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 
 import "@/app/_styles/globals.css";
+import Providers from "./provider";
 
 export const metadata = {
   title: {
@@ -13,7 +14,7 @@ type RootLayoutProps = { children: ReactNode };
 
 function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Devicon CSS */}
         <link
@@ -21,8 +22,8 @@ function RootLayout({ children }: RootLayoutProps) {
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
       </head>
-      <body className="bg-[#1a1a1a] w-full">
-        <main>{children}</main>
+      <body className="bg-[#1a1a1a] dark:bg-white w-full">
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

@@ -1,36 +1,36 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import ArticleIcon from "@mui/icons-material/Article";
+// import ArticleIcon from "@mui/icons-material/Article";
 
 function SocialLinks() {
   return (
-    <div className=" text-[#D9D9D9] text-sm flex flex-wrap gap-5 max-lg:w-full max-sm:grid max-sm:grid-cols-2">
+    <div className="text-[#39aacc] text-xs flex flex-wrap gap-3">
       <a
         href="https://github.com/geraldesteban"
-        className="flex gap-1 items-center p-1 border rounded-sm border-[#808080] bg-[#141414] hover:bg-transparent hover:border-[#D9D9D9]"
+        className="flex gap-1 items-center p-1 border rounded-sm border-[#39aacc] bg-[#1a1a1a] dark:bg-white hover:bg-transparent hover:border-[#256f94]"
         target="_blank"
       >
-        <GitHubIcon />
+        <GitHubIcon sx={{ fontSize: 20 }} />
         GITHUB
       </a>
       <a
         href="https://www.linkedin.com/in/geraldesteban"
-        className="flex gap-1 items-center p-1 border rounded-sm border-[#808080] bg-[#141414] hover:bg-transparent hover:border-[#D9D9D9]"
+        className="flex gap-1 items-center p-1 border rounded-sm border-[#39aacc] bg-[#1a1a1a] dark:bg-white hover:bg-transparent hover:border-[#256f94]"
         target="_blank"
       >
-        <LinkedInIcon />
+        <LinkedInIcon sx={{ fontSize: 20 }} />
         LINKEDIN
       </a>
       <a
         href="mailto:wakin.esteban@gmail.com"
-        className="flex gap-1 items-center p-1 border rounded-sm border-[#808080] bg-[#141414] hover:bg-transparent hover:border-[#D9D9D9]"
+        className="flex gap-1 items-center p-1 border rounded-sm border-[#39aacc] bg-[#1a1a1a] dark:bg-white hover:bg-transparent hover:border-[#256f94]"
         target="_blank"
       >
-        <EmailIcon />
+        <EmailIcon sx={{ fontSize: 20 }} />
         EMAIL
       </a>
-      <a
+      {/* <a
         href="/resume.pdf"
         className="flex gap-1 items-center p-1 border rounded-sm border-[#808080] bg-[#141414] hover:bg-transparent hover:border-[#D9D9D9]"
         target="_blank"
@@ -38,7 +38,7 @@ function SocialLinks() {
       >
         <ArticleIcon />
         RESUME
-      </a>
+      </a> */}
     </div>
   );
 }

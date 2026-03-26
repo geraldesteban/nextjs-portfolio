@@ -7,10 +7,12 @@ function About() {
       className="flex flex-col w-190 mx-auto gap-5 pt-28 pb-5 max-lg:px-5 max-lg:w-full max-md:pt-36"
     >
       <div className="flex flex-col gap-5">
-        <h2 className="font-bold text-5xl">Hi, I&apos;m Gerald Esteban</h2>
-        <p className="text-base font-semibold">
+        <h2 className="font-bold text-5xl dark:text-[#1A1A1A] text-[#D9D9D9]">
+          Hi, I&apos;m Gerald Esteban
+        </h2>
+        <p className="text-base font-semibold dark:text-[#808080] text-[#D9D9D9]">
           A web developer who is experienced in building web applications with
-          JavaScript, Tailwind, React, Next.js, and Supabase.
+          JavaScript, React, Next.js, and Supabase.
         </p>
       </div>
       {/* Social Links */}
