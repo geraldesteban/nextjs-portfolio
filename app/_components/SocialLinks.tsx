@@ -1,7 +1,7 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-// import ArticleIcon from "@mui/icons-material/Article";
+import ArticleIcon from "@mui/icons-material/Article";
 
 function SocialLinks() {
   return (
@@ -30,15 +30,15 @@ function SocialLinks() {
         <EmailIcon sx={{ fontSize: 20 }} />
         EMAIL
       </a>
-      {/* <a
-        href="/resume.pdf"
-        className="flex gap-1 items-center p-1 border rounded-sm border-[#808080] bg-[#141414] hover:bg-transparent hover:border-[#D9D9D9]"
+      <a
+        href="/Gerald_Esteban_Resume"
+        className="flex gap-1 items-center p-1 border rounded-sm border-[#39aacc] bg-[#1a1a1a] dark:bg-white hover:bg-transparent hover:border-[#256f94]"
         target="_blank"
         download
       >
         <ArticleIcon />
         RESUME
-      </a> */}
+      </a>
     </div>
   );
 }
