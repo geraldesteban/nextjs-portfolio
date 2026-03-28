@@ -31,7 +31,7 @@ function SocialLinks() {
         EMAIL
       </a>
       <a
-        href="/Gerald_Esteban_Resume"
+        href="/resume.pdf"
         className="flex gap-1 items-center p-1 border rounded-sm border-[#39aacc] bg-[#1a1a1a] dark:bg-white hover:bg-transparent hover:border-[#256f94]"
         target="_blank"
         download
