@@ -74,7 +74,7 @@ function TechStack() {
               className="devicon-nodejs-plain dark:text-[#1A1A1A] text-[#D9D9D9]"
               style={{ fontSize: "30px" }}
             ></i>
-            <h2 className="text-xs text-[#808080]">Supabase</h2>
+            <h2 className="text-xs text-[#808080]">Node.js</h2>
           </div>
         </div>
       </div>
